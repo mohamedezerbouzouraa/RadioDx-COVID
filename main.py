@@ -1,5 +1,4 @@
 import torch
-
 from src.dataset import ChestXRayDataset
 from src.transforms import train_transform, test_transform
 from src.model import build_model
