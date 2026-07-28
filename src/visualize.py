@@ -2,7 +2,6 @@ import numpy as np
 import torch
 from matplotlib import pyplot as plt
 
-
 def show_images(images, labels, preds, class_names):
     plt.figure(figsize=(8, 4))
     for i, image in enumerate(images):
