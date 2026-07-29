@@ -3,7 +3,6 @@ import random
 import torch
 from PIL import Image
 
-
 class ChestXRayDataset(torch.utils.data.Dataset):
     def __init__(self, image_dirs, transform):
         def get_images(class_name):
