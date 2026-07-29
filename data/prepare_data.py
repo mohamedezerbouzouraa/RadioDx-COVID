@@ -7,7 +7,6 @@ ROOT_DIR = 'COVID-19 Radiography Database'
 SOURCE_DIRS = ['NORMAL', 'Viral Pneumonia', 'COVID-19']
 IMAGES_PER_CLASS_FOR_TEST = 30
 
-
 def prepare_dataset(root_dir=ROOT_DIR, source_dirs=SOURCE_DIRS,
                      class_names=CLASS_NAMES,
                      n_test_images=IMAGES_PER_CLASS_FOR_TEST):
