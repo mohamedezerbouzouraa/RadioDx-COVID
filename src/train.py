@@ -12,7 +12,6 @@ def train(model, dl_train, dl_test, loss_fn, optimizer, test_dataset,
         train_loss = 0.
         val_loss = 0.
         model.train() 
-
         for train_step, (images, labels) in enumerate(dl_train):
             optimizer.zero_grad()
             outputs = model(images)
