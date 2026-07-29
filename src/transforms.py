@@ -1,12 +1,3 @@
-"""
-Image preprocessing pipelines for training and testing.
-
-Both resize to 224x224 (ResNet18 input size) and normalize using
-ImageNet statistics, since the model is pretrained on ImageNet.
-Only the training pipeline includes random horizontal flip
-augmentation.
-"""
-
 import torchvision
 
 train_transform = torchvision.transforms.Compose([
