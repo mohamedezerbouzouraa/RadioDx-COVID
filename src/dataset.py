@@ -9,10 +9,8 @@ class ChestXRayDataset(torch.utils.data.Dataset):
             images = [x for x in os.listdir(image_dirs[class_name]) if x[-3:].lower().endswith('png')]
             print(f'Found {len(images)} {class_name} examples')
             return images
-
         self.images = {}
         self.class_names = ['normal', 'viral', 'covid']
-
         for class_name in self.class_names:
             self.images[class_name] = get_images(class_name)
 
