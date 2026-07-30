@@ -4,7 +4,6 @@ from src.visualize import show_preds
 
 def train(model, dl_train, dl_test, loss_fn, optimizer, test_dataset,
           class_names, epochs=1, eval_every=20, accuracy_threshold=0.95):
-    print('Starting training..')
     for e in range(0, epochs):
         print('=' * 20)
         print(f'Starting epoch {e + 1}/{epochs}')
