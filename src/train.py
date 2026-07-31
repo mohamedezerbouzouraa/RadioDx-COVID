@@ -1,7 +1,6 @@
 import torch
 from src.visualize import show_preds
 
-
 def train(model, dl_train, dl_test, loss_fn, optimizer, test_dataset,
           class_names, epochs=1, eval_every=20, accuracy_threshold=0.95):
     for e in range(0, epochs):
