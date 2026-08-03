@@ -13,7 +13,6 @@ class ChestXRayDataset(torch.utils.data.Dataset):
         self.class_names = ['normal', 'viral', 'covid']
         for class_name in self.class_names:
             self.images[class_name] = get_images(class_name)
-
         self.image_dirs = image_dirs
         self.transform = transform
 
