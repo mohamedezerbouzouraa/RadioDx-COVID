@@ -7,6 +7,7 @@ from src.visualize import show_images, show_preds
 
 torch.manual_seed(0)
 ROOT_DIR = 'COVID-19 Radiography Database'
+
 BATCH_SIZE = 6
 EPOCHS = 1
 def main():
